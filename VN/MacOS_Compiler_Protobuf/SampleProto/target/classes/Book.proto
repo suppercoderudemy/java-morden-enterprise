@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+option java_package = "com.udemy.BookProto";
+
+message Book {
+  int32 id = 1;
+  string name = 2;
+  string ISBN = 3;
+  BookType bookType = 4;
+  Author author = 5;
+  repeated Chapter chapters = 6;
+}
+
+service BookController {
+  rpc CreateBook(CreateBookRequest) returns (CreateBookResponse) {}
+  rpc GetBooks(GetBookRequest) returns (GetBookResponse) {}
+}
+
+enum BookType {
+  TECHNOLOGY = 0;
+  KIDS = 1;
+}
+
+message Author {
+  int32 id = 1;
+  string name = 2;
+  string address = 3;
+}
+
+message Chapter {
+  int32 index = 1;
+  string name = 2;
+}
+
+message CreateBookRequest {
+  Book book = 1;
+}
+message GetBookRequest {
+  string name = 1;
+}
+message CreateBookResponse {
+  string msg = 1;
+}
+
+message GetBookResponse {
+  repeated Book books = 1;
+}
+
+
+
+

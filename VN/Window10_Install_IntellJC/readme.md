@@ -1,0 +1,4 @@
+- Search IntellJ from Google
+- Click Download and choose exe version for Window OS
+- Waiting for Downloading
+- Install it

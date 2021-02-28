@@ -1,0 +1,5 @@
+- Go to https://oracle.com
+- Find correct version for Window OS in orace.com
+- Accept liscen and login if you alrady have account, if not create new one
+- Download
+- Install

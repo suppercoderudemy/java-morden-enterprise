@@ -1,0 +1,6 @@
+- Goto github.com/protocolbuffers/protobuf/releases/tag/v3.14.0
+- Choose Zip file accoring to your OS
+- Uncompress download file
+- run `` cd ~/Downloads/protoc-3.14.0-osx-x86_64/bin ``
+- run `` ./protoc <path_to_your_proto_file> --java_out=<folder_contains_generated_classes> -I=<path_to_folder_which_contain_your_protofile> ``
+- check result at folder_contains_generated_classes folder

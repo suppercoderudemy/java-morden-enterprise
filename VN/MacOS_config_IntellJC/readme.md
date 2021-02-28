@@ -1,0 +1,5 @@
+- Open IntellJ, choose Preference Menu 
+- Choose Plugins
+- Search Google Java Format
+- Install Plugin google-java-format
+- Click on option Build, Execution, Deployment, click on Annotation Processord, check on Enable annotation processing
