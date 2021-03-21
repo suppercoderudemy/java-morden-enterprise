@@ -2,7 +2,6 @@ com/udemy/BookProto/BookOuterClass.class
 com/udemy/BookProto/BookOuterClass$GetBookResponseOrBuilder.class
 com/udemy/BookProto/BookOuterClass$BookType$1.class
 com/udemy/BookProto/BookOuterClass$Author$1.class
-com/udemy/BookServiceImpl.class
 com/udemy/BookProto/BookOuterClass$ChapterOrBuilder.class
 com/udemy/BookProto/BookOuterClass$CreateBookResponse.class
 com/udemy/BookProto/BookControllerGrpc$MethodHandlers.class
