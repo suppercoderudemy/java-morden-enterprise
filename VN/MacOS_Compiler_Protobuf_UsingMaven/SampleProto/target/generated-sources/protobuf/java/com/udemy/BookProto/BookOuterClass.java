@@ -27,6 +27,10 @@ public final class BookOuterClass {
      * <code>KIDS = 1;</code>
      */
     KIDS(1),
+    /**
+     * <code>ANIMAL = 2;</code>
+     */
+    ANIMAL(2),
     UNRECOGNIZED(-1),
     ;
 
@@ -38,6 +42,10 @@ public final class BookOuterClass {
      * <code>KIDS = 1;</code>
      */
     public static final int KIDS_VALUE = 1;
+    /**
+     * <code>ANIMAL = 2;</code>
+     */
+    public static final int ANIMAL_VALUE = 2;
 
 
     public final int getNumber() {
@@ -60,6 +68,7 @@ public final class BookOuterClass {
       switch (value) {
         case 0: return TECHNOLOGY;
         case 1: return KIDS;
+        case 2: return ANIMAL;
         default: return null;
       }
     }
@@ -5250,12 +5259,12 @@ public final class BookOuterClass {
       "CreateBookRequest\022\023\n\004book\030\001 \001(\0132\005.Book\"\036" +
       "\n\016GetBookRequest\022\014\n\004name\030\001 \001(\t\"!\n\022Create" +
       "BookResponse\022\013\n\003msg\030\001 \001(\t\"\'\n\017GetBookResp" +
-      "onse\022\024\n\005books\030\001 \003(\0132\005.Book*$\n\010BookType\022\016" +
-      "\n\nTECHNOLOGY\020\000\022\010\n\004KIDS\020\0012z\n\016BookControll" +
-      "er\0227\n\nCreateBook\022\022.CreateBookRequest\032\023.C" +
-      "reateBookResponse\"\000\022/\n\010GetBooks\022\017.GetBoo" +
-      "kRequest\032\020.GetBookResponse\"\000B\025\n\023com.udem" +
-      "y.BookProtob\006proto3"
+      "onse\022\024\n\005books\030\001 \003(\0132\005.Book*0\n\010BookType\022\016" +
+      "\n\nTECHNOLOGY\020\000\022\010\n\004KIDS\020\001\022\n\n\006ANIMAL\020\0022z\n\016" +
+      "BookController\0227\n\nCreateBook\022\022.CreateBoo" +
+      "kRequest\032\023.CreateBookResponse\"\000\022/\n\010GetBo" +
+      "oks\022\017.GetBookRequest\032\020.GetBookResponse\"\000" +
+      "B\025\n\023com.udemy.BookProtob\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

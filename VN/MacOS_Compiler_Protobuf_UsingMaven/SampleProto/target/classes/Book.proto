@@ -19,6 +19,7 @@ service BookController {
 enum BookType {
   TECHNOLOGY = 0;
   KIDS = 1;
+  ANIMAL = 2;
 }
 
 message Author {
